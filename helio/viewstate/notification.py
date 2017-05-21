@@ -1,4 +1,4 @@
-from viewstate import ViewState
+from .viewstate import ViewState
 
 
 class NotificationCentre(object):
@@ -58,10 +58,10 @@ class NotificationCentre(object):
         """Unsubscribe a controller from all listeners, useful when a controller is going to be taken off the VS tree."""
         notifications_to_remove = []
 
-        for notification_name, sources in self._notification_listeners.iteritems():
+        for notification_name, sources in self._notification_listeners.items():
             sources_to_remove = []
 
-            for source_path, listeners in sources.iteritems():
+            for source_path, listeners in sources.items():
                 listeners.discard(controller_path)
 
                 if len(listeners) == 0:

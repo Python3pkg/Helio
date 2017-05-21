@@ -3,7 +3,7 @@ from mock import patch
 try:
     import flask
     from werkzeug.datastructures import ImmutableMultiDict
-    from helioflask import helioflask, template_env
+    from .helioflask import helioflask, template_env
 
     flask.session = {}
 

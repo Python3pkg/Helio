@@ -1,5 +1,5 @@
 import unittest
-from finders import component_template_to_path, component_static_to_path
+from .finders import component_template_to_path, component_static_to_path
 
 
 class FinderTests(unittest.TestCase):

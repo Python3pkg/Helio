@@ -1,11 +1,11 @@
 import unittest
 import subprocess
-import urlparse, urllib
+import urllib.parse, urllib.request, urllib.parse, urllib.error
 import os
 
 
 def path2url(path):
-    return urlparse.urljoin('file:', urllib.pathname2url(path))
+    return urllib.parse.urljoin('file:', urllib.request.pathname2url(path))
 
 
 class JavascriptTestRunner(unittest.TestCase):

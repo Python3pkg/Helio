@@ -1,6 +1,6 @@
 import unittest
 from mock import patch, MagicMock
-from helpers import init_controller, import_controllers, get_controller_from_module_path
+from .helpers import init_controller, import_controllers, get_controller_from_module_path
 from helio.helio_exceptions import ControllerImportError
 
 

@@ -1,6 +1,6 @@
 import unittest
 from mock import MagicMock, patch
-from viewstate import ViewState, ViewStateManager, split_and_validate_path, get_default_viewstate
+from .viewstate import ViewState, ViewStateManager, split_and_validate_path, get_default_viewstate
 from helio.controller.base import BaseViewController
 from helio.helio_exceptions import ViewStateError
 

@@ -1,7 +1,7 @@
 import unittest
 from mock import MagicMock
-from notification import NotificationCentre
-from viewstate import ViewState
+from .notification import NotificationCentre
+from .viewstate import ViewState
 
 
 class NotifcationCentreTests(unittest.TestCase):

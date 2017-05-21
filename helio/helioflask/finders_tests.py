@@ -2,7 +2,7 @@ import unittest
 from mock import patch, MagicMock
 try:
     from jinja2 import TemplateNotFound
-    from finders import ComponentTemplateLoader, real_file_path
+    from .finders import ComponentTemplateLoader, real_file_path
 
     class ComponentTemplateTests(unittest.TestCase):
         rfp = '/path/to/file'

@@ -4,9 +4,9 @@ from mock import patch, MagicMock
 try:
     from django.conf import settings
     settings.configure()
-    from finders import ComponentStaticFinder, ComponentTemplateLoader, walk_component_base_dir, helio_static_path
-    from renderers import render, RequestContext, get_request_context
-    from middleware import CSRFHeaderInject
+    from .finders import ComponentStaticFinder, ComponentTemplateLoader, walk_component_base_dir, helio_static_path
+    from .renderers import render, RequestContext, get_request_context
+    from .middleware import CSRFHeaderInject
 
     class StaticFinderTests(unittest.TestCase):
         def setUp(self):
@@ -235,4 +235,4 @@ try:
 
 
 except ImportError:
-    print "Not testing Django integration."
+    print("Not testing Django integration.")

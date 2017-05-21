@@ -136,7 +136,7 @@ class BaseViewController(object):
         return asset_map
 
     def class_map_tree(self, current_tree):
-        for child_controller_stack in self._children.itervalues():
+        for child_controller_stack in self._children.values():
             if len(child_controller_stack):
                 child_controller_stack[-1].class_map_tree(current_tree)
 

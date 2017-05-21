@@ -1,7 +1,7 @@
 import unittest
 from mock import patch, MagicMock
 try:
-    from views import helio_get_view_state, helio_get_controller_data, helio_dispatch_notification
+    from .views import helio_get_view_state, helio_get_controller_data, helio_dispatch_notification
 
     class MockSession(dict):
         def __init__(self):

@@ -1,7 +1,7 @@
 import unittest
 try:
-    from urls import urlpatterns
-    from views import helio_get_view_state, helio_get_controller_data, helio_dispatch_notification
+    from .urls import urlpatterns
+    from .views import helio_get_view_state, helio_get_controller_data, helio_dispatch_notification
 
     class DjangoURLTests(unittest.TestCase):
         def test_controller_data_url(self):
